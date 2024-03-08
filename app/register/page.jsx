@@ -8,5 +8,5 @@ export default async function Register() {
 
   if (session) redirect("/dashboard");
 
-  return <RegisterForm />;
+  return <>{session ? "login" : <RegisterForm />}</>;
 }
