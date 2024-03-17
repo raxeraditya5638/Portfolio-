@@ -26,114 +26,9 @@ const Footer = () => {
                   Random feature
                 </Link>
               </li>
-              <li className="mb-2">
-                <Link
-                  href={"/"}
-                  className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
-                >
-                  Team feature
-                </Link>
-              </li>
-              <li className="mb-2">
-                <Link
-                  href={"/"}
-                  className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
-                >
-                  Stuff for developers
-                </Link>
-              </li>
-              <li className="mb-2">
-                <Link
-                  href={"/"}
-                  className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
-                >
-                  Another one
-                </Link>
-              </li>
-              <li className="mb-2">
-                <Link
-                  href={"/"}
-                  className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
-                >
-                  Last time
-                </Link>
-              </li>
             </ul>
           </div>
-          <div className="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 sm:mt-0">
-            <h5 className="text-xl font-bold mb-6">Resources</h5>
-            <ul className="list-none footer-links">
-              <li className="mb-2">
-                <Link
-                  href={"/"}
-                  className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
-                >
-                  Resource
-                </Link>
-              </li>
-              <li className="mb-2">
-                <Link
-                  href={"/"}
-                  className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
-                >
-                  Resource name
-                </Link>
-              </li>
-              <li className="mb-2">
-                <Link
-                  href={"/"}
-                  className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
-                >
-                  Another resource
-                </Link>
-              </li>
-              <li className="mb-2">
-                <Link
-                  href={"/"}
-                  className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
-                >
-                  Final resource
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div className="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 md:mt-0">
-            <h5 className="text-xl font-bold mb-6">About</h5>
-            <ul className="list-none footer-links">
-              <li className="mb-2">
-                <Link
-                  href={"/"}
-                  className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
-                >
-                  Team
-                </Link>
-              </li>
-              <li className="mb-2">
-                <Link
-                  href={"/"}
-                  className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
-                >
-                  Locations
-                </Link>
-              </li>
-              <li className="mb-2">
-                <Link
-                  href={"/"}
-                  className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
-                >
-                  Privacy
-                </Link>
-              </li>
-              <li className="mb-2">
-                <Link
-                  href={"/"}
-                  className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
-                >
-                  Terms
-                </Link>
-              </li>
-            </ul>
-          </div>
+
           <div className="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 md:mt-0">
             <h5 className="text-xl font-bold mb-6">Help</h5>
             <ul className="list-none footer-links">
@@ -143,22 +38,6 @@ const Footer = () => {
                   className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
                 >
                   Support
-                </Link>
-              </li>
-              <li className="mb-2">
-                <Link
-                  href={"/"}
-                  className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
-                >
-                  Help Center
-                </Link>
-              </li>
-              <li className="mb-2">
-                <Link
-                  href={"/"}
-                  className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
-                >
-                  Contact Us
                 </Link>
               </li>
             </ul>
@@ -192,21 +71,14 @@ const Footer = () => {
 
         <div className="sm:flex sm:flex-wrap sm:-mx-4 mt-6 pt-6 sm:mt-12 sm:pt-12 border-t">
           <div className="sm:w-full px-4 md:w-1/6">
-            <strong>FWR</strong>
+            <strong>FDS</strong>
           </div>
-          <div className="px-4 sm:w-1/2 md:w-1/4 mt-4 md:mt-0">
-            <h6 className="font-bold mb-2">Address</h6>
-            <address className="not-italic mb-4 text-sm">
-              123 6th St.
-              <br />
-              Melbourne, FL 32904
-            </address>
-          </div>
+
           <div className="px-4 sm:w-1/2 md:w-1/4 mt-4 md:mt-0">
             <h6 className="font-bold mb-2">Free Resources</h6>
             <p className="mb-4 text-sm">
-              Use our HTML blocks for <strong>FREE</strong>.<br />
-              <em>All are MIT License</em>
+              Use our <strong>Skills</strong>.<br />
+              <em>All are Developers</em>
             </p>
           </div>
           <div className="px-4 md:w-1/4 md:ml-auto mt-6 sm:mt-4 md:mt-0">

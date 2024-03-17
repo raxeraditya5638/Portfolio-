@@ -1,10 +1,17 @@
 "use client";
-import React from "react";
-import Link from "next/link";
+import { signOut, useSession } from "next-auth/react";
 import Image from "next/image";
+import Link from "next/link";
+import { useState } from "react";
 import Style from "../Styles/Navbar.module.css";
 
 const Navbar = () => {
+  const { data: session } = useSession();
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <div className="">
       <div className="nav bg-green-500">
@@ -52,25 +59,99 @@ const Navbar = () => {
                 </button>
               </li>
               <li>
-                <button>
-                  <Link
-                    href={"/login"}
-                    className="rounded-xl text-white hover:underline"
-                  >
-                    Login
-                  </Link>
-                </button>
+                {session ? (
+                  <button>
+                    <Link
+                      onClick={() => {
+                        signOut();
+                      }}
+                      href={"/"}
+                      className="rounded-xl text-white hover:underline"
+                    >
+                      Lgout
+                    </Link>
+                  </button>
+                ) : (
+                  <button>
+                    <Link
+                      href={"/login"}
+                      className="rounded-xl text-white hover:underline"
+                    >
+                      Login
+                    </Link>
+                  </button>
+                )}
               </li>
             </ul>
           </div>
           <div className="ham sm:hidden">
-            <Image
-              src={"/Images/login.svg"}
-              alt="logo"
-              width={32}
-              height={32}
-            />
+            <button onClick={toggleMenu}>
+              {isOpen ? (
+                <div className="main">
+                  <span className="text-white text-2xl">×</span>
+                </div>
+              ) : (
+                <Image
+                  src={"/Images/login.svg"}
+                  alt="logo"
+                  width={32}
+                  height={32}
+                />
+              )}
+            </button>
           </div>
+          {/* Mobile Menu */}
+          {isOpen && (
+            <div className="w-screen h-screen fixed  z-10 top-0 left-0 bg-white flex justify-between">
+              <div className="sm:hidden mt-4 flex flex-col items-start">
+                <button onClick={toggleMenu}>
+                  <Link href={"/"} className="block text-black py-2 px-4">
+                    Home
+                  </Link>
+                </button>
+                <button onClick={toggleMenu}>
+                  <Link
+                    href={"/contactus"}
+                    className="block text-black py-2 px-4"
+                  >
+                    Contactus
+                  </Link>
+                </button>
+                <button onClick={toggleMenu}>
+                  <Link
+                    href={"/development"}
+                    className="block text-black py-2 px-4"
+                  >
+                    Development
+                  </Link>
+                </button>
+                {session ? (
+                  <button onClick={toggleMenu}>
+                    <Link
+                      href={"/login"}
+                      className="block text-black py-2 px-4"
+                    >
+                      Login
+                    </Link>
+                  </button>
+                ) : (
+                  <button onClick={toggleMenu}>
+                    <Link
+                      href={"/register"}
+                      className="block text-black py-2 px-4"
+                    >
+                      Register
+                    </Link>
+                  </button>
+                )}
+              </div>
+              <div className="btn">
+                <button onClick={toggleMenu} className="py-3 px-5 text-4xl">
+                  ×
+                </button>
+              </div>
+            </div>
+          )}
         </nav>
       </div>
     </div>

@@ -10,9 +10,13 @@ export default function LoginForm() {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const { data: session } = useSession();
+
+  const [loading, setLoading] = useState(false);
+
   const router = useRouter();
 
   const handleSubmit = async (e) => {
+    setLoading(true);
     e.preventDefault();
 
     try {
@@ -24,19 +28,34 @@ export default function LoginForm() {
 
       if (res.error) {
         setError("Invalid Credentials");
+        setLoading(false);
+        return;
+      }
+
+      if (!res) {
+        setError("User not Found");
         return;
       }
 
       router.replace("/dashboard"); // Absolute path should start with "/"
     } catch (error) {
-      console.log(error);
+      // Check if the error message indicates database connectivity issue
+      if (error.message && error.message.includes("database")) {
+        setError("Database is not responding. Please try again later.");
+      } else {
+        setError("An unexpected error occurred. Please try again later.");
+      }
+      console.log("show login error");
+      console.log("login error", error);
+    } finally {
+      setLoading(false);
     }
   };
 
   return (
     <div className="grid place-items-center h-screen">
       {session ? (
-        "login"
+        "you Are Allready Login"
       ) : (
         <div className="shadow-lg p-5 rounded-lg border-t-4 border-green-400">
           <h1 className="text-xl font-bold my-4">Login</h1>
@@ -53,7 +72,7 @@ export default function LoginForm() {
               placeholder="Password"
             />
             <button className="bg-green-600 text-white font-bold cursor-pointer px-6 py-2">
-              Login
+              {loading ? "Loading..." : "Login"}
             </button>
             {error && (
               <div className="bg-red-500 text-white w-fit text-sm py-1 px-3 rounded-md mt-2">

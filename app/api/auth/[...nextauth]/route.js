@@ -15,9 +15,14 @@ export const authOptions = {
 
         try {
           await connectMongoDB();
+          if (!connectMongoDB) {
+            console.log("not connect database");
+            return;
+          }
           const user = await User.findOne({ email });
 
           if (!user) {
+            console.log("user not found");
             return null;
           }
 

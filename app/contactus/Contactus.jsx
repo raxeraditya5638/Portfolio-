@@ -5,11 +5,39 @@ const Contactus = () => {
   return (
     <div>
       <main className="">
-        <div className="email mt-5">
-          <h1 className="text-4xl block mt-3 font-serif">My Personal Email</h1>
-          <h1 className="text-3xl block mt-4 font-sans">
-            aditya1596k@gmail.com
-          </h1>
+        <div className="flex justify-between items-center">
+          <div className="email mt-5">
+            <h1 className="text-[2.5vw] block mt-3 font-serif">
+              My Personal Email
+            </h1>
+            <h1 className="text-[2vw] block mt-4 font-sans">
+              aditya1596k@gmail.com
+            </h1>
+          </div>
+          <div className="phone">
+            <h1 className="text-[2.5vw] block mt-3 font-serif">
+              Phone Number or Whats App
+            </h1>
+            <h1 className="text-[2.5vw] block mt-3 font-serif">9760157737</h1>
+          </div>
+        </div>
+        <div className="social flex flex-col">
+          <div className="linkedin">
+            <h1 className="mt-7 text-[2vw]">Linkedin</h1>
+            <h1 className="mt-5 text-[1.8vw]">
+              https://www.linkedin.com/in/aditya-kushwaha-0687022aa/
+            </h1>
+          </div>
+          <div className="github end">
+            <h1 className="mt-7 text-[2vw]">GitHub</h1>
+            <h1 className="mt-5 text-[1.8vw]">
+              https://github.com/raxeraditya5638
+            </h1>
+          </div>
+          <div className="Twitter">
+            <h1 className="mt-7 text-[2vw]">Twitter</h1>
+            <h1 className="mt-5 text-[1.8vw]">https://twitter.com/K37Aditya</h1>
+          </div>
         </div>
         <div className="page-2">
           <div className="image flex-col flex justify-center items-center my-10">
@@ -25,13 +53,13 @@ const Contactus = () => {
             <div className="para">
               <div className="text flex-col flex justify-center items-center mt-10">
                 <h1 className="capitalize text-[2.5vw] mb-5 sm:mb-10">
-                  This Is My expertise
+                  My Python work
                 </h1>
                 <div className="flex sm:justify-evenly items-center gap-3 flex-col sm:flex-row sm:gap-10">
                   <div className="image">
                     <div className="image rounded-lg h-full w-full grid grid-cols-12 sm:flex">
                       <Image
-                        src={"/Images/img.jpg"}
+                        src={"/Images/python.jpg"}
                         width={500}
                         height={500}
                         alt="image"
@@ -41,35 +69,29 @@ const Contactus = () => {
                   </div>
                   <div className="para w-[70vw]">
                     <p className=" text-[1.5vw] p-1 capitalize">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Delectus adipisci placeat iste quasi ducimus at minus?
-                      Magni ipsa, labore deleniti culpa iste repellat inventore
-                      enim hic sunt, odit nobis quos!
+                      As an aspiring Python developer with a year of personal
+                      experience, I bring a strong foundation in Python
+                      programming and a passion for coding. Eager to transition
+                      from personal projects to a professional setting,
                       <span>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Delectus adipisci placeat iste quasi ducimus at minus?
-                        Magni ipsa, labore deleniti culpa iste repellat
-                        inventore enim hic sunt, odit nobis quos!
+                        I am committed to learning and contributing effectively
+                        to projects. With a solid understanding of Python
+                        fundamentals, I'm excited to embark on this journey and
+                        make meaningful contributions to your team's success.
                       </span>
                     </p>
                   </div>
                 </div>
                 <div className="second-box mt-5 sm:mt-20 mb-10">
                   <h1 className="capitalize text-[2vw] text-center">
-                    This Is my second expertise
+                    I Learn About Frameworks Like Next js
                   </h1>
-                  <h3 className="mt-10  text-center text-[1.5vw]">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Earum quis dolore autem, in modi recusandae dolorem numquam
-                    eos ea blanditiis adipisci voluptates maxime eaque
-                    perferendis eligendi non laudantium ipsum esse.
-                  </h3>
                 </div>
                 <div className="flex sm:justify-evenly items-center gap-3 flex-col sm:flex-row-reverse sm:gap-10">
                   <div className="image">
                     <div className="image rounded-lg h-full w-full grid grid-cols-12 sm:flex">
                       <Image
-                        src={"/Images/img.jpg"}
+                        src={"/Images/nextjs.webp"}
                         width={500}
                         height={500}
                         alt="image"
@@ -79,15 +101,17 @@ const Contactus = () => {
                   </div>
                   <div className="para w-[70vw]">
                     <p className=" text-[1.5vw] pt-1 capitalize">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Delectus adipisci placeat iste quasi ducimus at minus?
-                      Magni ipsa, labore deleniti culpa iste repellat inventore
-                      enim hic sunt, odit nobis quos!
+                      As a budding Next.js developer, I've honed my skills
+                      through personal projects, including creating a chat app
+                      and an eCommerce platform using Next.js. These projects
+                      have equipped me with hands-on experience in building
+                      robust web applications.
                       <span>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Delectus adipisci placeat iste quasi ducimus at minus?
-                        Magni ipsa, labore deleniti culpa iste repellat
-                        inventore enim hic sunt, odit nobis quos!
+                        Eager to leverage my expertise and creativity in a
+                        professional setting, I'm committed to contributing
+                        innovative solutions and growing alongside your team.
+                        I'm excited about the opportunity to collaborate and
+                        make meaningful contributions to your projects.
                       </span>
                     </p>
                   </div>

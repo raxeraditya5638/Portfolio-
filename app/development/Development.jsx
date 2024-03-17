@@ -8,14 +8,12 @@ const Development = () => {
         <div className="jango">
           <div className="first grid grid-cols-12">
             <div className="text col-start-4 col-span-6">
-              <div className="h1 mt-5">
-                <h1 className="text-center">Django</h1>
-              </div>
+              <div className="h1 mt-5"></div>
               <div className="flex items-center justify-center mt-10">
                 <div className="image">
                   <Image
                     className="rounded-lg"
-                    src={"/Images/img.jpg"}
+                    src={"/Images/django.png"}
                     height={200}
                     width={200}
                     alt="image"

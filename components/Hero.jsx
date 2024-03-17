@@ -1,6 +1,7 @@
 import React from "react";
 
 import style from "../Styles/Hero.module.css";
+import Herochild from "./Herochild";
 
 const Hero = () => {
   return (
@@ -19,27 +20,28 @@ const Hero = () => {
                 </span>
               ))}
             </div>
-            <div className="second flex flex-row items-center gap-3">
-              <div
-                id={style.box}
-                className="box w-[12vw] rounded-lg h-[10vh] bg-cyan-500 text-center text-4xl hidden"
-              ></div>
-              <div className="flex font-semibold text-[10vw] tracking-tighter leading-none">
+            {/* <div className="second flex flex-row items-center gap-3">
+              // {/* <div
+              //   id={style.box}
+              //   className="box w-[12vw] rounded-lg h-[10vh] bg-cyan-500 text-center text-4xl hidden"
+              // ></div> */}
+            {/* <div className="flex font-semibold text-[10vw] tracking-tighter leading-none">
                 {"Some New".split("").map((item, index) => (
                   <span key={index} id={style.box}>
                     {item}
                   </span>
                 ))}
               </div>
-            </div>
+            </div> */}
             <div className="flex font-semibold text-[10vw] tracking-tighter leading-none">
-              {"Technology".split("").map((item, index) => (
+              {"Some Thing".split("").map((item, index) => (
                 <span key={index}>{item}</span>
               ))}
             </div>
           </div>
         </main>
       </div>
+      <Herochild />
     </div>
   );
 };
