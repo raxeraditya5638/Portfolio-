@@ -76,8 +76,8 @@ const Contactus = () => {
                       <span>
                         I am committed to learning and contributing effectively
                         to projects. With a solid understanding of Python
-                        fundamentals, I'm excited to embark on this journey and
-                        make meaningful contributions to your team's success.
+                        fundamentals, I am excited to embark on this journey and
+                        make meaningful contributions to your teams success.
                       </span>
                     </p>
                   </div>
@@ -101,17 +101,17 @@ const Contactus = () => {
                   </div>
                   <div className="para w-[70vw]">
                     <p className=" text-[1.5vw] pt-1 capitalize">
-                      As a budding Next.js developer, I've honed my skills
+                      As a budding Next.js developer, I love honed my skills
                       through personal projects, including creating a chat app
                       and an eCommerce platform using Next.js. These projects
                       have equipped me with hands-on experience in building
                       robust web applications.
                       <span>
                         Eager to leverage my expertise and creativity in a
-                        professional setting, I'm committed to contributing
-                        innovative solutions and growing alongside your team.
-                        I'm excited about the opportunity to collaborate and
-                        make meaningful contributions to your projects.
+                        professional setting, I am committed to contributing
+                        innovative solutions and growing alongside your team. I
+                        am excited about the opportunity to collaborate and make
+                        meaningful contributions to your projects.
                       </span>
                     </p>
                   </div>

@@ -39,8 +39,8 @@ const Features = () => {
                   <span className="text-[3vw] sm:text-[1.8vw] p-1 capitalize">
                     I am committed to learning and contributing effectively to
                     projects. With a solid understanding of Python fundamentals,
-                    I'm excited to embark on this journey and make meaningful
-                    contributions to your team's success.
+                    I am excited to embark on this journey and make meaningful
+                    contributions to your teams success.
                   </span>
                 </p>
               </div>
@@ -64,15 +64,15 @@ const Features = () => {
               </div>
               <div className="para w-[70vw]">
                 <p className=" text-[3vw] sm:text-[1.8vw] pt-1 capitalize">
-                  As a budding Next.js developer, I've honed my skills through
+                  As a budding Next.js developer, I love honed my skills through
                   personal projects, including creating a chat app and an
                   eCommerce platform using Next.js. These projects have equipped
                   me with hands-on experience in building robust web
                   applications.
                   <span>
                     Eager to leverage my expertise and creativity in a
-                    professional setting, I'm committed to contributing
-                    innovative solutions and growing alongside your team. I'm
+                    professional setting, I am committed to contributing
+                    innovative solutions and growing alongside your team. I am
                     excited about the opportunity to collaborate and make
                     meaningful contributions to your projects.
                   </span>

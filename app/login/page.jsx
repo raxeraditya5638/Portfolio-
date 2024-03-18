@@ -81,7 +81,8 @@ export default function LoginForm() {
             )}
 
             <Link href={"/register"}>
-              Don't have an account? <span className="underline">Register</span>
+              Don not have an account?{" "}
+              <span className="underline">Register</span>
             </Link>
           </form>
         </div>
